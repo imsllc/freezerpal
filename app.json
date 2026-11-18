@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "FreezerPal: Freezer Inventory",
+    "slug": "freezerpal",
+    "scheme": "freezerpal",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "android": {
+      "package": "com.freezerpal.app",
+      "versionCode": 5,
+      "allowBackup": false,
+      "predictiveBackGestureEnabled": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "monochromeImage": "./assets/adaptive-icon-monochrome.png",
+        "backgroundColor": "#0B0B61"
+      },
+      "permissions": ["com.android.vending.BILLING"],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.VIBRATE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ]
+    },
+    "ios": { "bundleIdentifier": "com.freezerpal.app", "supportsTablet": true },
+    "web": { "favicon": "./assets/icon.png", "bundler": "metro" },
+    "plugins": [
+      "./scripts/with-android-release.cjs",
+      "expo-sqlite",
+      "expo-iap",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-6230290323057717~8524450639",
+          "delayAppMeasurementInit": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "FreezerPal uses your camera to take photos of food for your inventory.",
+          "photosPermission": "FreezerPal lets you choose photos for your food inventory.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "splash": { "backgroundColor": "#F6F7F8" }
+  }
+}

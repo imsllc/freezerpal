@@ -1,0 +1,41 @@
+const navy = "#001B4E";
+
+export const themes = {
+  light: {
+    bg: "#F6F7F8",
+    surface: "#FFFFFF",
+    ink: "#20282D",
+    muted: "#626D74",
+    accent: navy,
+    accentFill: navy,
+    edit: "#397BB0",
+    onAccent: "#FFFFFF",
+    soft: "#E5EDF9",
+    line: "#E0E4E7",
+    tag: "#EDF0F2",
+    danger: "#A52D35",
+    dangerBg: "#FCEBED",
+    warning: "#805008",
+    warningBg: "#FFF0CE",
+    overlay: "rgba(0,27,78,0.5)",
+  },
+  dark: {
+    bg: "#15191C",
+    surface: "#20262B",
+    ink: "#EDF0F2",
+    muted: "#ADB7BF",
+    accent: "#A6C3FF",
+    accentFill: navy,
+    edit: "#8CBFEC",
+    onAccent: "#FFFFFF",
+    soft: "#263852",
+    line: "#384149",
+    tag: "#30383F",
+    danger: "#FFB3B8",
+    dangerBg: "#492A30",
+    warning: "#F3CB7F",
+    warningBg: "#41361F",
+    overlay: "rgba(0,0,0,0.65)",
+  },
+};
+export type Colors = typeof themes.light;

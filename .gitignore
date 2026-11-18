@@ -1,0 +1,41 @@
+# Dependencies and generated Expo projects
+node_modules/
+/.expo/
+/.expo-shared/
+/android/
+/ios/
+
+# Build outputs and tooling caches
+/dist/
+/dist-android/
+/.build-temp/
+/.gradle/
+/.kotlin/
+/.idea/
+/.eslintcache
+*.tsbuildinfo
+coverage/
+*.aab
+*.apk
+*.apks
+
+# Local SDK configuration, credentials, and signing material
+local.properties
+credentials.json
+*.mobileprovision
+*.p8
+*.p12
+*.key
+*.pem
+*.jks
+*.keystore
+*.jceks
+*.pfx
+*.pkcs12
+.env*
+!.env.example
+
+# Logs and operating system files
+*.log
+.DS_Store
+Thumbs.db
